@@ -12,6 +12,8 @@
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
+[Web Request-Response Cycle](https://jamboard.google.com/d/1l-XNp-an-ygvDp6xeD7cepiPqmo4B1qo96Q8SejkO3o/edit?usp=sharing)
+
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
