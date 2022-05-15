@@ -13,7 +13,7 @@ class Explore extends React.Component {
           onChange={this.props.searchLocation} 
           placeholder='enter city' />
         </Form.Group>
-        <Button onClick={this.props.getLocation} variant='primary' type='submit '>
+        <Button onClick={this.props.clickHandler} variant='primary' type='submit '>
           Explore!
         </Button>
         {this.props.locationName && 
