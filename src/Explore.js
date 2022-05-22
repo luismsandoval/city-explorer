@@ -16,8 +16,8 @@ class Explore extends React.Component {
         <Button onClick={this.props.clickHandler} variant='primary' type='submit '>
           Explore!
         </Button>
-        {this.props.locationName && 
-          <h2>The city we searched for is {this.props.locationName} {this.props.lat} {this.props.lon}</h2>
+        {this.props.return.display_name && 
+          <h2>The city we searched for is {this.props.return.display_name} {this.props.return.lat} {this.props.return.lon}</h2>
         }
       </Form>
     </>
