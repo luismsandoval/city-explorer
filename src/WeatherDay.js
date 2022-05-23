@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 
-class WeatherDay extends React.component {
+class WeatherDay extends React.Component {
 
   render() {
     return (
