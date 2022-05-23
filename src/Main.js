@@ -35,7 +35,7 @@ class Main extends React.Component {
       const url = process.env.REACT_APP_SERVER;
 
       const response = await axios.get(`${url}/weather?lat=${this.state.return.lat}&lon=${this.state.return.lon}`);
-      this.setState({ weather: response.data.map(value => (`${value.datetime}, ${value.description}`)) });
+      this.setState({ weather: response.data });
     } catch (error) {
       await this.errorHandler(error);
     }
@@ -57,7 +57,6 @@ class Main extends React.Component {
   clickHandler = (event) => {
     event.preventDefault();
     this.getLocation();
-    console.log(this.state.return.lat);
   }
 
   showAll = () => {
@@ -71,7 +70,6 @@ class Main extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <>
         <Explore return={this.state.return} searchLocation={this.searchLocation} clickHandler={this.clickHandler} />
