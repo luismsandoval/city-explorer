@@ -4,7 +4,7 @@ import Explore from './Explore';
 import Map from './Map';
 import Error from './Error';
 import Weather from './Weather';
-import Movie from './Movie';
+import Movies from './Movies';
 
 class Main extends React.Component {
 
@@ -79,7 +79,7 @@ class Main extends React.Component {
         <Map lat={this.state.return.lat} lon={this.state.return.lon} />
 
         <Weather weather={this.state.weather} />
-        <Movie movies={this.state.movies} />
+        <Movies movies={this.state.movies} />
 
         <Error error={this.state.error} />
       </>
